@@ -3,11 +3,6 @@
   src: url("../fonts/Aleo/Light/aleo-light-webfont.woff") format("woff"), url("../fonts/Aleo/Light/aleo-light-webfont.eot") format("eot");
 }
 
-@font-face {
-  font-family: "Aleo-Regular";
-  src: url("../fonts/Aleo/Regular/aleo-regular-webfont.woff") format("woff"), url("../fonts/Aleo/Regular/aleo-regular-webfont.eot") format("eot");
-}
-
 div {
   display: flex;
   align-items: center;
@@ -15,7 +10,7 @@ div {
   flex-direction: column;
 }
 h2 {
-  font-family: "Aleo-Regular";
+  font-family: "Aleo-Light";
   margin: 30px;
 }
 .logo {
