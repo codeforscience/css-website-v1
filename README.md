@@ -1,2 +1,3 @@
-# codeforscience.github.io
+# codeforscience.org
+
 codeforscience site
