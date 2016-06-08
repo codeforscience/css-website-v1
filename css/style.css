@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Aleo-Light";
+  src: url("../fonts/Aleo/Light/aleo-light-webfont.woff") format("woff"), url("../fonts/Aleo/Light/aleo-light-webfont.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Aleo-Regular";
+  src: url("../fonts/Aleo/Regular/aleo-regular-webfont.woff") format("woff"), url("../fonts/Aleo/Regular/aleo-regular-webfont.eot") format("eot");
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h2 {
+  font-family: "Aleo-Regular";
+  margin: 30px;
+}
+.logo {
+  width: 300px;
+}
+p {
+  opacity: 0.85;
+  font-family: "Aleo-Light";
+  font-size: 1.2em;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
