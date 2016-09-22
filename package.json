@@ -1,0 +1,71 @@
+{
+  "name": "dat-website",
+  "version": "1.0.0",
+  "description": "dat-data.com source",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-css && node render.js && npm run server",
+    "server": "nodemon --watch templates --watch scss -e scss,js,jade,html -i rendered --exec \"npm run build-css && node render.js && http-server rendered\"",
+    "test": "node test/run.js | tap-spec",
+    "watch": "watchify -t brfs index.js -o bundle.js",
+    "build-css": "node-sass --importer node_modules/node-sass-magic-importer scss/base.scss static/css/base.css",
+    "deploy": "gh-pages-deploy",
+    "render": "node render.js"
+  },
+  "keywords": [
+    "data",
+    "datasets",
+    "publish",
+    "registry",
+    "dathub",
+    "dat",
+    "web"
+  ],
+  "gh-pages-deploy": {
+    "staticpath": "rendered",
+    "cname": "dat-data.com",
+    "prep": [
+      "build-css",
+      "render"
+    ],
+    "noprompt": false
+  },
+  "author": "dat project",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/datproject/website/issues"
+  },
+  "homepage": "http://dat-data.com",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "cptar": "^1.0.0",
+    "dat-design": "^1.2.11",
+    "gh-pages-deploy": "^0.3.0",
+    "handlebars": "^4.0.5",
+    "jquery": "^2.1.1",
+    "marked": "^0.3.5",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.8.0",
+    "node-sass-magic-importer": "^0.1.4",
+    "nodemon": "^1.2.1",
+    "page": "^1.4.1",
+    "rimraf": "^2.4.4",
+    "rss": "^1.2.1",
+    "xhr": "^2.0.3"
+  },
+  "devDependencies": {
+    "page-router": "^1.0.1",
+    "autoless": "^0.1.5",
+    "brfs": "^1.4.0",
+    "browserify": "^7.0.0",
+    "dom": "0.0.3",
+    "gravatar": "^1.1.1",
+    "http-server": "^0.8.0",
+    "mustache": "^2.0.0",
+    "watchify": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datproject/website.git"
+  }
+}
