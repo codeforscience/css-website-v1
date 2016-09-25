@@ -6898,7 +6898,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
 .header-nav-link {
   color: #293648; }
   .header-nav-link.active {
-    color: #35B44F; }
+    color: #5f7993; }
   .header-nav-link:hover, .header-nav-link:focus {
     color: #505F6D; }
 
@@ -7056,7 +7056,7 @@ input.edit-info {
   z-index: 999999; }
   .banner.success {
     top: 0;
-    background-color: #35B44F; }
+    background-color: #5f7993; }
   .banner.error {
     top: 0;
     background-color: #D8524E; }
@@ -7218,7 +7218,7 @@ h1, h2, h3, h4, h5 {
     width: 100%; }
 
 a {
-  color: #35B44F; }
+  color: #5f7993; }
   a:hover, a:focus {
     color: #24943A;
     text-decoration: none; }
@@ -7250,7 +7250,7 @@ pre {
   font-size: 18px;
   font-weight: 600;
   color: white;
-  background-color: #35B44F;
+  background-color: #5f7993;
   padding: 9px 14px;
   border-radius: 5px; }
   .button.button-light {
@@ -7265,7 +7265,7 @@ ul {
 
 /** SPLASH **/
 .rsaquo {
-  color: #35B44F;
+  color: #5f7993;
   margin-right: 10px;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px; }
@@ -7353,12 +7353,12 @@ ul {
 .jumbotron-continue {
   font-size: 20px;
   font-weight: 700;
-  color: #35B44F;
+  color: #5f7993;
   padding-right: 10px;
   padding-bottom: 50px; }
 
 .jumbotron-continue a {
-  color: #35B44F; }
+  color: #5f7993; }
 
 .jumbotron-spacer {
   height: 60px; }
@@ -7378,7 +7378,7 @@ ul {
   background-color: white; }
 
 .content a {
-  color: #35B44F;
+  color: #5f7993;
   font-weight: 600;
   text-decoration: none; }
   .content a:hover, .content a:focus {
@@ -7483,7 +7483,7 @@ ul {
   margin-bottom: 10px; }
 
 .content-text-container a {
-  color: #35B44F;
+  color: #5f7993;
   text-decoration: none; }
   .content-text-container a:hover, .content-text-container a:focus {
     text-decoration: underline; }
@@ -7500,7 +7500,7 @@ ul {
   margin-bottom: 50px; }
 
 .content-card-small a {
-  color: #35B44F;
+  color: #5f7993;
   text-decoration: none; }
   .content-card-small a:hover, .content-card-small a:focus {
     text-decoration: underline; }
@@ -7624,7 +7624,7 @@ a.load-document {
       color: #919BA4; }
     .sidebar-list .document h2 {
       margin: 0;
-      color: #35B44F; }
+      color: #5f7993; }
     .sidebar-list .document:not(.active) {
       border-left: 1px solid #F6F7F8; }
     .sidebar-list .document.active {

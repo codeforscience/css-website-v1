@@ -21,8 +21,7 @@ var templates = {
   about: readTemplate('about'),
   blog: readTemplate('blog'),
   splash: readTemplate('splash'),
-  team: readTemplate('team'),
-  docs: readTemplate('docs')
+  team: readTemplate('team')
 }
 
 function readTemplate (file) {
@@ -48,7 +47,6 @@ posts.forEach(function (post) {
 renderStatic(templates.splash, 'index')
 renderStatic(templates.about, 'about')
 renderStatic(templates.team, 'team')
-renderStatic(templates.docs, 'docs')
 
 // copy static stuff
 cptar('./static', outDir + '/static', function (err) {

@@ -1,7 +1,7 @@
 {
-  "name": "dat-website",
+  "name": "codeforscience-website",
   "version": "1.0.0",
-  "description": "dat-data.com source",
+  "description": "codeforscience.org source",
   "main": "index.js",
   "scripts": {
     "start": "npm run build-css && node render.js && npm run server",
@@ -13,29 +13,22 @@
     "render": "node render.js"
   },
   "keywords": [
-    "data",
-    "datasets",
-    "publish",
-    "registry",
-    "dathub",
-    "dat",
-    "web"
   ],
   "gh-pages-deploy": {
     "staticpath": "rendered",
-    "cname": "dat-data.com",
+    "cname": "codeforscience.org",
     "prep": [
       "build-css",
       "render"
     ],
     "noprompt": false
   },
-  "author": "dat project",
+  "author": "max ogden",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/datproject/website/issues"
+    "url": "https://github.com/codeforscience/codeforscience.github.io/issues"
   },
-  "homepage": "http://dat-data.com",
+  "homepage": "http://codeforscience.org",
   "dependencies": {
     "cheerio": "^0.19.0",
     "cptar": "^1.0.0",
@@ -66,6 +59,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/datproject/website.git"
+    "url": "git+https://github.com/codeforscience/codeforscience.github.io.git"
   }
 }
