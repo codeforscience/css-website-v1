@@ -19,6 +19,7 @@ var posts = require('./posts.js')
 var templates = {
   index: readTemplate('index'),
   about: readTemplate('about'),
+  events: readTemplate('events'),
   blog: readTemplate('blog'),
   splash: readTemplate('splash'),
   team: readTemplate('team')
@@ -46,6 +47,7 @@ posts.forEach(function (post) {
 
 renderStatic(templates.splash, 'index')
 renderStatic(templates.about, 'about')
+renderStatic(templates.events, 'events')
 renderStatic(templates.team, 'team')
 
 // copy static stuff
