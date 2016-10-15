@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="icon" href="/static/favicon.ico">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" media="screen">
   <link rel="stylesheet" href="/static/css/base.css" media="screen">
 </head>
 <body>
   <div class="header">
     <div class="header-nav container">
       <div class="header-nav-links">
-        <ul class="header-nav-list">
+        <ul class="header-nav-list" id="menu">
           <li><a href="/" class="header-nav-link">Home</a></li>
           <li><a href="/about" class="header-nav-link">About</a></li>
           <li><a href="/team" class="header-nav-link">Team</a></li>
@@ -51,6 +52,10 @@
   </div>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -59,6 +64,12 @@
 
     ga('create', 'UA-84719120-1', 'auto');
     ga('send', 'pageview');
+
+  	$(function(){
+  		$('#menu').slicknav({
+        label: ''
+      });
+  	});
 
   </script>
 </body>
