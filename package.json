@@ -9,20 +9,11 @@
     "test": "node test/run.js | tap-spec",
     "watch": "watchify -t brfs index.js -o bundle.js",
     "build-css": "node-sass --importer node_modules/node-sass-magic-importer scss/base.scss static/css/base.css",
-    "deploy": "gh-pages-deploy",
+    "build": "npm run build-css && npm run render",
     "render": "node render.js"
   },
   "keywords": [
   ],
-  "gh-pages-deploy": {
-    "staticpath": "rendered",
-    "cname": "codeforscience.org",
-    "prep": [
-      "build-css",
-      "render"
-    ],
-    "noprompt": false
-  },
   "author": "max ogden",
   "license": "BSD",
   "bugs": {
