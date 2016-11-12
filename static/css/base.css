@@ -6914,9 +6914,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
   padding-left: 43px;
   background-position: 0 11px;
   margin-top: 2px;
-  color: #293648;
-  overflow: hidden;
-  max-width: 48px; }
+  color: #293648; }
   .header-logo:hover, .header-logo:focus {
     color: #505F6D;
     text-decoration: none; }
@@ -7642,3 +7640,20 @@ a.load-document {
 td, th {
   padding: 10px;
   border: 1px solid black; }
+
+/** mobile nav **/
+.slicknav_menu {
+  display: none;
+  background-color: white; }
+
+.slicknav_btn {
+  background-color: #293648; }
+
+@media screen and (max-width: 40em) {
+  /* #menu is the original menu */
+  #menu {
+    display: none; }
+  .slicknav_menu {
+    display: block; }
+  .header-logo {
+    font-size: 24px; } }
