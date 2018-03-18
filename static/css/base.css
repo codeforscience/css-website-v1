@@ -431,7 +431,7 @@ a:focus {
   text-decoration: none; }
 
 body, input, textarea, select, button {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif; }
+  font-family: 'Work Sans', sans-serif; }
 
 body {
   line-height: 1.5; }
@@ -2386,7 +2386,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Work Sans',sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -7189,7 +7189,7 @@ input.edit-info {
     width: 100%; } }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #FFFFFF; }
