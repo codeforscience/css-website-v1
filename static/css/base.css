@@ -6916,7 +6916,7 @@ Railscasts-like style (c) Visoft, Inc. (Damien White)
   margin-top: 2px;
   height: 60px;
   width: 100px;
-  text-indent: -999999px
+  text-indent: -999999px;
   color: #293648; }
   .header-logo:hover, .header-logo:focus {
     color: #505F6D;
