@@ -6,12 +6,9 @@
   "scripts": {
     "start": "npm run build-css && node render.js && npm run server",
     "server": "nodemon --watch templates --watch scss -e scss,js,jade,html -i rendered --exec \"npm run build-css && node render.js && http-server rendered\"",
-    "test": "node test/run.js | tap-spec",
-    "watch": "watchify -t brfs index.js -o bundle.js"
   },
-  "keywords": [
-  ],
-  "author": "max ogden",
+  "keywords": [],
+  "author": "Code for Science & Society",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/codeforscience/codeforscience.github.io/issues"
@@ -23,7 +20,6 @@
     "dat-design": "^1.2.11",
     "gh-pages-deploy": "^0.3.0",
     "handlebars": "^4.0.5",
-    "jquery": "^2.1.1",
     "marked": "^0.3.5",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.8.0",
